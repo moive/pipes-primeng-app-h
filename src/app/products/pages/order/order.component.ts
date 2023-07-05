@@ -5,4 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './order.component.html',
   styleUrls: ['./order.component.scss'],
 })
-export class OrderComponent {}
+export class OrderComponent {
+  isUpperCase: boolean = false;
+
+  toggleUpperCase(): void {
+    this.isUpperCase = !this.isUpperCase;
+  }
+}
