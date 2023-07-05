@@ -2,5 +2,27 @@
   <ng-template pTemplate="header"
     ><span class="font-bold text-xl">Pipes Personalizados</span></ng-template
   >
-  <p>Pipes Personalizados created by Moive</p>
+  <p>Pipes Personalizados created by {{ "Moive" | toggleCase : true }}</p>
 </p-panel>
+<p-toolbar>
+  <div class="p-toolbar-group-start">
+    <p-button label="ToggleCase" icon="pi pi-search" class="mr-2"></p-button>
+  </div>
+  <div class="p-toolbar-group-end">
+    <p-button
+      label="Por Nombre"
+      icon="pi pi-sort"
+      styleClass="p-button-success mr-2"
+    ></p-button>
+    <p-button
+      label="Por volar"
+      icon="pi pi-sort"
+      styleClass="p-button-danger mr-2"
+    ></p-button>
+    <p-button
+      label="Por color"
+      icon="pi pi-sort"
+      styleClass="p-button-help"
+    ></p-button>
+  </div>
+</p-toolbar>
